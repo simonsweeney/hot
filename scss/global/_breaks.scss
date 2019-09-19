@@ -1,0 +1,29 @@
+@mixin small {
+  @media (max-width: 768px) { @content; }
+}
+
+@mixin ix {
+  @media only screen 
+  and (device-width : 375px) 
+  and (device-height : 812px) 
+  and (-webkit-device-pixel-ratio : 3) { @content; }
+}
+
+@mixin i5 {
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-height: 568px) 
+  and (-webkit-device-pixel-ratio: 2) { @content; }
+}
+
+@mixin i7 {
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-height: 667px) 
+  and (-webkit-device-pixel-ratio: 2) { @content; }
+}
+
+@mixin large {
+    @media (min-width: 769px) { @content; }
+}
+  

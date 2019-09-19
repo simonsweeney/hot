@@ -1,0 +1,23 @@
+
+.logo {
+    position: absolute;
+    width: calc(100% - 2em);
+    left: 1em;
+    @include i5 {
+        bottom: 40px;
+    }
+    @include i7 {
+        bottom: 50px;
+    }
+    @include ix {
+        bottom: 90px;
+    }
+    @include large {
+       bottom: 1em;
+    }
+    svg {
+        path {
+            fill: white;
+        }
+    }
+}
